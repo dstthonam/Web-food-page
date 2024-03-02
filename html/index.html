@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Webfood</title>
+    <title>WebFood</title>
   </head>
   <body>
-    <header>
+    <header id="main-header">
+      <h2>
+        <a href="/html/index.html" id="logo">WebFood</a>
+      </h2>
       <nav>
-        <h2>
-          <a href="/html/index.html">Webfood</a>
-        </h2>
         <div>
           <ul>
-            <li>Browse Meals</li>
-            <li>My Orders</li>
+            <li><a href="">Browse Meals</a></li>
+            <li><a href="">My Orders</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <h1>
-        Browse Our Delicious Meals
-      </h1>
-      <section>
-        <p>김치찌개</p>
-        <a href="">Add to Cart</a>
-      </section>
-      <section>
-        <p>된장찌개</p>
-        <a href="">Add to Cart</a>
+      <h1>Browse Our Delicious Meals</h1>
+      <section id="latest-products">
+        <ul>
+          <li class="food-items">
+            <article>
+              <img src="/images/food-item-1.webp" alt="very delicious food image, ver: gimchiggigae">
+              <div class="food-item-content">
+                <h3>김치찌개</h3>
+                <a href="" class="btn">Add to Cart</a>
+              </div>
+            </article> 
+          </li>              
+          <li class="food-items">
+            <article>
+              <img src="/images/food-item-2.webp" alt="very delicious food image, ver: daenjangggigae">
+              <div class="food-item-content">
+                <h3>된장찌개</h3>
+                <a href="" class="btn">Add to Cart</a>
+              </div>
+            </article> 
+          </li>              
+        </ul>
       </section>
     </main>
     <footer>
