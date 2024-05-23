@@ -1,51 +1,98 @@
 body {
   background-color: rgba(41, 40, 40, 0.7);
+  font-family: "Black Han Sans", sans-serif;
+  font-style: normal;
+  margin: 0;
 }
-header {
-  text-align: center;
+a {
+  text-decoration: none;
 }
-header ul {
-  /* top: 24px;
-  margin-top: 24px; */
+#main-header {
+  height: 5rem;
   display: flex;
-}
-nav {
-  height: 100px;
-  background-color: rgba(36, 36, 36, 0.8);
-  display: flex;
-  flex-direction: row;
-  font-weight: 400;
-  color: rgba(204, 113, 28, 0.8);
   justify-content: space-between;
-
+  align-items: center;
+  background-color: rgba(36, 36, 36, 0.8);
+  padding: 0px 5%;
 }
-header h2 {
-  font-size: 24px;
+#logo {
+  font-size: 1.5rem;
   font-weight: bolder;
   color: rgba(204, 113, 28, 0.8);
-  padding: 24px;
   text-transform: uppercase;
-  margin: auto 24px;
 }
-header h2 a {
-  text-decoration: none;
+#main-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+#main-header li {
+  padding: 0px 1rem;
+}
+#main-header nav a {
   color: rgba(204, 113, 28, 0.8);
+  font-size: 1.25rem;
 }
-header h2 a:hover {
+#main-header nav a:hover {
   background-color: rgba(204, 113, 28, 0.8);
   color: white;
-  margin: 20px 0px;
-  padding: 20px 20px 20px -20px;
-  font-weight: 600;
+  padding: 6px;
+  font-weight: 300;
   border-radius: 6px;
 }
-header li {
-  list-style: none;
-  padding: 20px;
-  font-size: 18px;
-  margin: auto 24px;
-}
 main h1 {
+  text-align: center;
   color: rgba(204, 113, 28, 0.8);
+  font-size: 2rem;
+  font-weight: 300;
+}
+#latest-products {
+  width: 80%;
+  margin: 2rem auto;
+}
+#latest-products ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.food-item {
+  background-color: rgb(190, 158, 129);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.food-item img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.food-item-content {
+  padding: 1rem;
+  text-align: center;
+}
+.btn {
+  background-color: rgba(204, 113, 28, 0.8);
+  color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1.5rem;
+}
+.btn:hover {
+  background-color: rgba(204, 113, 28, 1);
+}
+.food-item-content h3 {
+  font-size: 28px;
+  font-weight: 300;
+  margin: 10px auto 16px auto;
+}
 
+@media (max-width: 768px) {
+  main h1 {
+   font-size: 1.5rem; 
+  }
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
 }
